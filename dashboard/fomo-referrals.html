@@ -338,45 +338,38 @@
 
     .posts {
       display: grid;
-      grid-template-columns: repeat(5, minmax(190px, 1fr));
+      grid-template-columns: repeat(3, minmax(280px, 1fr));
       gap: 12px;
-      overflow-x: auto;
       padding-bottom: 4px;
     }
 
     .post {
-      min-height: 264px;
+      min-height: 500px;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
       padding: 14px;
-      background:
-        linear-gradient(150deg, rgba(127, 125, 255, .92), rgba(97, 85, 231, .9)),
-        var(--panel-2);
+      background: rgba(8, 9, 37, .72);
       position: relative;
       overflow: hidden;
     }
 
-    .post:before {
-      content: "";
-      position: absolute;
-      right: -38px;
-      top: 18px;
-      width: 96px;
-      height: 96px;
-      border: 4px solid rgba(255,255,255,.45);
-      transform: rotate(45deg);
-      filter: drop-shadow(0 0 12px rgba(255,255,255,.44));
+    .post iframe,
+    .post blockquote {
+      width: 100% !important;
+      min-width: 0 !important;
+      max-width: 100% !important;
+      margin: 0 !important;
+      border-radius: 8px !important;
     }
 
     .post h4 {
-      margin: 10px 0 12px;
-      font-size: 36px;
-      line-height: .82;
+      margin: 0 0 8px;
+      font-size: 24px;
+      line-height: .9;
       text-transform: uppercase;
       color: #fff;
       text-shadow: 0 3px 0 var(--blue);
-      max-width: 160px;
       overflow-wrap: anywhere;
     }
 
@@ -393,12 +386,13 @@
 
     .post-stats {
       display: grid;
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: repeat(3, 1fr);
       gap: 8px;
       font-family: Inter, system-ui, sans-serif;
       font-weight: 900;
       font-size: 12px;
       color: #fff;
+      margin-top: 10px;
     }
 
     .post-stat {
@@ -495,6 +489,19 @@
       box-shadow: none;
     }
 
+    .data-source {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 12px;
+      align-items: center;
+    }
+
+    .data-source a {
+      color: #fff;
+      font-family: Inter, system-ui, sans-serif;
+      font-weight: 900;
+    }
+
     .footer-actions {
       display: flex;
       flex-wrap: wrap;
@@ -507,8 +514,9 @@
       .wide,
       .forms,
       .playbook { grid-template-columns: 1fr; }
-      .posts { grid-template-columns: repeat(5, 220px); }
+      .posts { grid-template-columns: 1fr; }
       .mascot { width: 138px; opacity: .5; }
+      .data-source { grid-template-columns: 1fr; }
     }
 
     @media (max-width: 700px) {
@@ -552,7 +560,7 @@
       <div class="metrics">
         <div class="metric"><div class="label">Current Refs</div><div class="value" id="currentRefs">0</div><div class="delta" id="refDelta">Waiting</div></div>
         <div class="metric"><div class="label">Latest Ref Gain</div><div class="value" id="latestGain">0</div><div class="delta" id="latestGainLabel">Since last check</div></div>
-        <div class="metric"><div class="label">IG Followers</div><div class="value" id="followers">0</div><div class="delta" id="followerDelta">Add first IG snapshot</div></div>
+        <div class="metric"><div class="label">Instagram Source</div><div class="value" id="igSource">Live</div><div class="delta" id="igSourceLabel">Real post embeds</div></div>
         <div class="metric"><div class="label">Best Post</div><div class="value" id="bestPostScore">0</div><div class="delta" id="bestPostName">Add post analytics</div></div>
       </div>
     </section>
@@ -568,7 +576,7 @@
       <div class="panel">
         <div class="panel-title">
           <h3>Daily Log</h3>
-          <span class="tiny">Refs and IG snapshots</span>
+          <span class="tiny">Referral gains</span>
         </div>
         <div id="dailyLog"></div>
       </div>
@@ -600,37 +608,11 @@
         </form>
       </div>
       <div class="control">
-        <strong>Add Instagram snapshot</strong>
-        <form id="igForm">
-          <input name="date" type="date" required>
-          <input name="followers" type="number" min="0" step="1" placeholder="Followers" required>
-          <input name="reach" type="number" min="0" step="1" placeholder="Reach">
-          <input name="profileVisits" type="number" min="0" step="1" placeholder="Profile visits">
-          <input name="linkClicks" type="number" min="0" step="1" placeholder="Link clicks">
-          <button>Add IG snapshot</button>
-        </form>
-      </div>
-      <div class="control">
-        <strong>Add post analytics</strong>
-        <form id="postForm">
-          <input name="date" type="date" required>
-          <input name="title" placeholder="Post title" required>
-          <select name="format">
-            <option>Case study</option>
-            <option>Trade recap</option>
-            <option>Poll</option>
-            <option>Loss lesson</option>
-            <option>News reaction</option>
-          </select>
-          <input name="views" type="number" min="0" step="1" placeholder="Views">
-          <input name="likes" type="number" min="0" step="1" placeholder="Likes">
-          <input name="comments" type="number" min="0" step="1" placeholder="Comments">
-          <input name="shares" type="number" min="0" step="1" placeholder="Shares">
-          <input name="saves" type="number" min="0" step="1" placeholder="Saves">
-          <input name="referrals" type="number" min="0" step="1" placeholder="Refs attributed">
-          <textarea name="notes" placeholder="Creative notes"></textarea>
-          <button>Add post</button>
-        </form>
+        <strong>Instagram feed</strong>
+        <div class="data-source">
+          <span>Post Lab now uses real Instagram permalinks and Instagram's embed renderer instead of fake placeholder cards.</span>
+          <a href="https://www.instagram.com/tryfomonews/" target="_blank" rel="noreferrer">Open IG</a>
+        </div>
       </div>
     </section>
 
@@ -640,7 +622,7 @@
         <span class="tiny">Browser-saved updates for fast team review</span>
       </div>
       <div class="control">
-        <span>Use the forms for quick updates during calls. Export when numbers are ready to make permanent in the shared source file.</span>
+        <span>Referral updates can be added during calls. Public Instagram posts render directly from Instagram. Follower count, reach, profile visits, saves, shares, and link clicks require the IG account connected through Meta/Instagram Graph API because those are private Insights numbers.</span>
         <div class="footer-actions">
           <button class="ghost" id="exportBtn" type="button">Export JSON</button>
           <button class="ghost" id="resetBtn" type="button">Reset local edits</button>
@@ -649,9 +631,10 @@
     </section>
   </main>
 
+  <script async src="https://www.instagram.com/embed.js"></script>
   <script>
     const seeded = window.FOMO_DASHBOARD || { referrals: [], instagram: { snapshots: [], posts: [] } };
-    const storageKey = "fomo-dashboard-local-v1";
+    const storageKey = "fomo-dashboard-local-v2";
     const local = JSON.parse(localStorage.getItem(storageKey) || "{}");
     const fmt = new Intl.NumberFormat("en-US");
     const pct = new Intl.NumberFormat("en-US", { maximumFractionDigits: 2 });
@@ -726,7 +709,6 @@
     function render() {
       const { referrals, snapshots, posts } = getData();
       const ref = delta(referrals, "refs");
-      const ig = delta(snapshots, "followers");
       const totalGain = referrals.length > 1 ? referrals.at(-1).refs - referrals[0].refs : 0;
       const avgGain = referrals.length > 1 ? totalGain / (referrals.length - 1) : 0;
       const best = posts.find(post => scorePost(post) > 0);
@@ -737,8 +719,8 @@
       document.getElementById("refDelta").textContent = referrals.length > 1 ? `+${fmt.format(totalGain)} from first check` : "Add today's count";
       document.getElementById("latestGain").textContent = fmt.format(Math.max(0, ref.value));
       document.getElementById("latestGainLabel").textContent = ref.prev ? `${ref.prev.date} to ${ref.last.date}` : "Since last check";
-      document.getElementById("followers").textContent = ig.last ? fmt.format(ig.last.followers) : "0";
-      document.getElementById("followerDelta").textContent = ig.prev ? `+${fmt.format(ig.value)} since last snapshot` : "Add first IG snapshot";
+      document.getElementById("igSource").textContent = "Live";
+      document.getElementById("igSourceLabel").textContent = `${fmt.format(posts.length)} real IG posts loaded`;
       document.getElementById("bestPostScore").textContent = best ? fmt.format(scorePost(best)) : "0";
       document.getElementById("bestPostName").textContent = best ? best.title : "Add post analytics";
       document.getElementById("growthScore").textContent = `${fmt.format(avgGain.toFixed(1))} refs/day`;
@@ -750,13 +732,12 @@
 
       const rows = [...new Set([...referrals.map(e => e.date), ...snapshots.map(e => e.date)])].sort().reverse();
       document.getElementById("dailyLog").innerHTML = rows.length ? `<table>
-        <thead><tr><th>Date</th><th>Refs</th><th>IG</th><th>Gain</th></tr></thead>
+        <thead><tr><th>Date</th><th>Refs</th><th>Gain</th></tr></thead>
         <tbody>${rows.map(date => {
           const r = referrals.find(e => e.date === date);
-          const s = snapshots.find(e => e.date === date);
           const rIndex = referrals.findIndex(e => e.date === date);
           const gain = r && rIndex > 0 ? r.refs - referrals[rIndex - 1].refs : 0;
-          return `<tr><td>${date}</td><td>${r ? fmt.format(r.refs) : "-"}</td><td>${s && s.followers ? fmt.format(s.followers) : "-"}</td><td>${gain > 0 ? "+" : ""}${r ? fmt.format(gain) : "-"}</td></tr>`;
+          return `<tr><td>${date}</td><td>${r ? fmt.format(r.refs) : "-"}</td><td>${gain > 0 ? "+" : ""}${r ? fmt.format(gain) : "-"}</td></tr>`;
         }).join("")}</tbody>
       </table>` : '<div class="empty">No entries yet.</div>';
 
@@ -765,18 +746,17 @@
         const views = Number(post.views) || 0;
         const engagement = views ? ((Number(post.likes || 0) + Number(post.comments || 0) + Number(post.shares || 0) + Number(post.saves || 0)) / views) * 100 : 0;
         return `<article class="post">
-          <div>
-            <div class="post-kicker"><span>JJ fomo</span><span>${post.format}</span></div>
-            <h4>${post.title}</h4>
-          </div>
+          <div class="post-kicker"><span>${post.format}</span><span>${post.date || ""}</span></div>
+          <h4>${post.title}</h4>
+          ${post.url ? `<blockquote class="instagram-media" data-instgrm-permalink="${post.url}" data-instgrm-version="14"><a href="${post.url}" target="_blank" rel="noreferrer">View on Instagram</a></blockquote>` : ""}
           <div class="post-stats">
-            <div class="post-stat">${fmt.format(views)} views</div>
-            <div class="post-stat">${pct.format(engagement)}% ER</div>
-            <div class="post-stat">${fmt.format(post.shares || 0)} shares</div>
+            <div class="post-stat">${fmt.format(post.likes || 0)} likes</div>
+            <div class="post-stat">${fmt.format(post.comments || 0)} comments</div>
             <div class="post-stat">${fmt.format(scorePost(post))} score</div>
           </div>
         </article>`;
       }).join("");
+      if (window.instgrm?.Embeds) window.instgrm.Embeds.process();
 
       const themes = posts.filter(post => scorePost(post) > 0).slice(0, 3);
       const fallback = [
@@ -801,43 +781,6 @@
       const form = new FormData(event.currentTarget);
       const entry = { date: form.get("date"), refs: Number(form.get("refs")) };
       saveLocal({ referrals: [...(local.referrals || []).filter(item => item.date !== entry.date), entry] });
-      event.currentTarget.reset();
-      event.currentTarget.date.value = today;
-    });
-
-    document.getElementById("igForm").addEventListener("submit", event => {
-      event.preventDefault();
-      const form = new FormData(event.currentTarget);
-      const entry = {
-        date: form.get("date"),
-        followers: Number(form.get("followers")),
-        reach: Number(form.get("reach") || 0),
-        profileVisits: Number(form.get("profileVisits") || 0),
-        linkClicks: Number(form.get("linkClicks") || 0)
-      };
-      saveLocal({ snapshots: [...(local.snapshots || []).filter(item => item.date !== entry.date), entry] });
-      event.currentTarget.reset();
-      event.currentTarget.date.value = today;
-    });
-
-    document.getElementById("postForm").addEventListener("submit", event => {
-      event.preventDefault();
-      const form = new FormData(event.currentTarget);
-      const title = form.get("title").toString();
-      const entry = {
-        id: title.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, ""),
-        date: form.get("date"),
-        title,
-        format: form.get("format"),
-        views: Number(form.get("views") || 0),
-        likes: Number(form.get("likes") || 0),
-        comments: Number(form.get("comments") || 0),
-        shares: Number(form.get("shares") || 0),
-        saves: Number(form.get("saves") || 0),
-        referrals: Number(form.get("referrals") || 0),
-        notes: form.get("notes").toString()
-      };
-      saveLocal({ posts: [entry, ...(local.posts || [])] });
       event.currentTarget.reset();
       event.currentTarget.date.value = today;
     });
