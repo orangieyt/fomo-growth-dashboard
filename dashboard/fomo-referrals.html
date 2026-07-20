@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>FOMO Growth Dashboard</title>
-  <script src="../data/fomo-referrals.js?v=20260720-real-ig"></script>
+  <script src="../data/fomo-referrals.js?v=20260720-real-ig-2"></script>
   <style>
     :root {
       --bg: #130f3f;
@@ -560,7 +560,7 @@
       <div class="metrics">
         <div class="metric"><div class="label">Current Refs</div><div class="value" id="currentRefs">0</div><div class="delta" id="refDelta">Waiting</div></div>
         <div class="metric"><div class="label">Latest Ref Gain</div><div class="value" id="latestGain">0</div><div class="delta" id="latestGainLabel">Since last check</div></div>
-        <div class="metric"><div class="label">Instagram Source</div><div class="value" id="igSource">Live</div><div class="delta" id="igSourceLabel">Real post embeds</div></div>
+        <div class="metric"><div class="label">IG Followers</div><div class="value" id="igSource">Live</div><div class="delta" id="igSourceLabel">From Instagram embeds</div></div>
         <div class="metric"><div class="label">Best Post</div><div class="value" id="bestPostScore">0</div><div class="delta" id="bestPostName">Add post analytics</div></div>
       </div>
     </section>
@@ -719,7 +719,7 @@
       document.getElementById("refDelta").textContent = referrals.length > 1 ? `+${fmt.format(totalGain)} from first check` : "Add today's count";
       document.getElementById("latestGain").textContent = fmt.format(Math.max(0, ref.value));
       document.getElementById("latestGainLabel").textContent = ref.prev ? `${ref.prev.date} to ${ref.last.date}` : "Since last check";
-      document.getElementById("igSource").textContent = "Live";
+      document.getElementById("igSource").textContent = seeded.instagram?.profileFollowers ? fmt.format(seeded.instagram.profileFollowers) : "Live";
       document.getElementById("igSourceLabel").textContent = `${fmt.format(posts.length)} real IG posts loaded`;
       document.getElementById("bestPostScore").textContent = best ? fmt.format(scorePost(best)) : "0";
       document.getElementById("bestPostName").textContent = best ? best.title : "Add post analytics";
