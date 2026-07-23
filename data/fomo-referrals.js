@@ -1,5 +1,5 @@
 window.FOMO_DASHBOARD = {
-  "updatedAt": "2026-07-22T22:15:11.009Z",
+  "updatedAt": "2026-07-23T22:15:21.250Z",
   "instagram": {
     "handle": "@tryfomonews",
     "url": "https://www.instagram.com/tryfomonews/",
@@ -14,13 +14,13 @@ window.FOMO_DASHBOARD = {
         "title": "$70 into SUSHICAT",
         "format": "Case study",
         "views": 0,
-        "likes": 75,
+        "likes": 86,
         "comments": 8,
         "shares": 0,
         "saves": 0,
         "referrals": 0,
         "notes": "Best public engagement found. Loss/win story with tiny entry and huge upside.",
-        "syncedAt": "2026-07-22T22:15:09.950Z"
+        "syncedAt": "2026-07-23T22:15:20.327Z"
       },
       {
         "id": "Da7YB1tPwab",
@@ -36,7 +36,7 @@ window.FOMO_DASHBOARD = {
         "saves": 0,
         "referrals": 0,
         "notes": "Multi-wallet proof angle. Keep repeating clean profit screenshots and simple framing.",
-        "syncedAt": "2026-07-22T22:15:10.210Z"
+        "syncedAt": "2026-07-23T22:15:20.525Z"
       },
       {
         "id": "Da7syfivpxW",
@@ -46,13 +46,13 @@ window.FOMO_DASHBOARD = {
         "title": "Meme coins are back",
         "format": "News reaction",
         "views": 0,
-        "likes": 28,
+        "likes": 29,
         "comments": 5,
         "shares": 0,
         "saves": 0,
         "referrals": 0,
         "notes": "Trend framing around Ansem/Solana. Good for comments and discourse.",
-        "syncedAt": "2026-07-22T22:15:10.486Z"
+        "syncedAt": "2026-07-23T22:15:20.828Z"
       },
       {
         "id": "Da6zSGgDwcf",
@@ -68,7 +68,7 @@ window.FOMO_DASHBOARD = {
         "saves": 0,
         "referrals": 0,
         "notes": "Simple before/after trade result. Needs stronger comments CTA.",
-        "syncedAt": "2026-07-22T22:15:10.758Z"
+        "syncedAt": "2026-07-23T22:15:20.961Z"
       },
       {
         "id": "Da5m7znD3Pd",
@@ -84,10 +84,10 @@ window.FOMO_DASHBOARD = {
         "saves": 0,
         "referrals": 0,
         "notes": "Product news angle. Lower engagement than trader PnL stories.",
-        "syncedAt": "2026-07-22T22:15:11.009Z"
+        "syncedAt": "2026-07-23T22:15:21.250Z"
       }
     ],
-    "profileFollowers": 509
+    "profileFollowers": 733
   },
   "referrals": [
     {
@@ -121,6 +121,10 @@ window.FOMO_DASHBOARD = {
     {
       "date": "2026-07-20",
       "refs": 2915
+    },
+    {
+      "date": "2026-07-22",
+      "refs": 3655
     }
   ]
 };
