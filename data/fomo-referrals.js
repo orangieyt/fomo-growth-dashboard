@@ -1,5 +1,5 @@
 window.FOMO_DASHBOARD = {
-  "updatedAt": "2026-07-24T04:15:13.164Z",
+  "updatedAt": "2026-07-24T10:15:27.554Z",
   "instagram": {
     "handle": "@tryfomonews",
     "url": "https://www.instagram.com/tryfomonews/",
@@ -20,7 +20,7 @@ window.FOMO_DASHBOARD = {
         "saves": 0,
         "referrals": 0,
         "notes": "Best public engagement found. Loss/win story with tiny entry and huge upside.",
-        "syncedAt": "2026-07-24T04:15:12.040Z"
+        "syncedAt": "2026-07-24T10:15:26.852Z"
       },
       {
         "id": "Da7YB1tPwab",
@@ -36,7 +36,7 @@ window.FOMO_DASHBOARD = {
         "saves": 0,
         "referrals": 0,
         "notes": "Multi-wallet proof angle. Keep repeating clean profit screenshots and simple framing.",
-        "syncedAt": "2026-07-24T04:15:12.184Z"
+        "syncedAt": "2026-07-24T10:15:26.967Z"
       },
       {
         "id": "Da7syfivpxW",
@@ -46,13 +46,13 @@ window.FOMO_DASHBOARD = {
         "title": "Meme coins are back",
         "format": "News reaction",
         "views": 0,
-        "likes": 28,
+        "likes": 29,
         "comments": 5,
         "shares": 0,
         "saves": 0,
         "referrals": 0,
         "notes": "Trend framing around Ansem/Solana. Good for comments and discourse.",
-        "syncedAt": "2026-07-24T04:15:12.707Z"
+        "syncedAt": "2026-07-24T10:15:27.245Z"
       },
       {
         "id": "Da6zSGgDwcf",
@@ -68,7 +68,7 @@ window.FOMO_DASHBOARD = {
         "saves": 0,
         "referrals": 0,
         "notes": "Simple before/after trade result. Needs stronger comments CTA.",
-        "syncedAt": "2026-07-24T04:15:12.815Z"
+        "syncedAt": "2026-07-24T10:15:27.364Z"
       },
       {
         "id": "Da5m7znD3Pd",
@@ -84,7 +84,7 @@ window.FOMO_DASHBOARD = {
         "saves": 0,
         "referrals": 0,
         "notes": "Product news angle. Lower engagement than trader PnL stories.",
-        "syncedAt": "2026-07-24T04:15:13.164Z"
+        "syncedAt": "2026-07-24T10:15:27.554Z"
       }
     ],
     "profileFollowers": 733
