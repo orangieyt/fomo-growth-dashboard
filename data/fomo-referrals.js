@@ -1,5 +1,5 @@
 window.FOMO_DASHBOARD = {
-  "updatedAt": "2026-07-25T10:15:10.869Z",
+  "updatedAt": "2026-07-25T16:15:16.989Z",
   "instagram": {
     "handle": "@tryfomonews",
     "url": "https://www.instagram.com/tryfomonews/",
@@ -14,13 +14,13 @@ window.FOMO_DASHBOARD = {
         "title": "$70 into SUSHICAT",
         "format": "Case study",
         "views": 0,
-        "likes": 95,
+        "likes": 96,
         "comments": 8,
         "shares": 0,
         "saves": 0,
         "referrals": 0,
         "notes": "Best public engagement found. Loss/win story with tiny entry and huge upside.",
-        "syncedAt": "2026-07-25T10:15:10.199Z"
+        "syncedAt": "2026-07-25T16:15:16.322Z"
       },
       {
         "id": "Da7YB1tPwab",
@@ -36,7 +36,7 @@ window.FOMO_DASHBOARD = {
         "saves": 0,
         "referrals": 0,
         "notes": "Multi-wallet proof angle. Keep repeating clean profit screenshots and simple framing.",
-        "syncedAt": "2026-07-25T10:15:10.348Z"
+        "syncedAt": "2026-07-25T16:15:16.500Z"
       },
       {
         "id": "Da7syfivpxW",
@@ -52,7 +52,7 @@ window.FOMO_DASHBOARD = {
         "saves": 0,
         "referrals": 0,
         "notes": "Trend framing around Ansem/Solana. Good for comments and discourse.",
-        "syncedAt": "2026-07-25T10:15:10.511Z"
+        "syncedAt": "2026-07-25T16:15:16.722Z"
       },
       {
         "id": "Da6zSGgDwcf",
@@ -68,7 +68,7 @@ window.FOMO_DASHBOARD = {
         "saves": 0,
         "referrals": 0,
         "notes": "Simple before/after trade result. Needs stronger comments CTA.",
-        "syncedAt": "2026-07-25T10:15:10.630Z"
+        "syncedAt": "2026-07-25T16:15:16.840Z"
       },
       {
         "id": "Da5m7znD3Pd",
@@ -84,7 +84,7 @@ window.FOMO_DASHBOARD = {
         "saves": 0,
         "referrals": 0,
         "notes": "Product news angle. Lower engagement than trader PnL stories.",
-        "syncedAt": "2026-07-25T10:15:10.869Z"
+        "syncedAt": "2026-07-25T16:15:16.989Z"
       }
     ],
     "profileFollowers": 843
@@ -133,6 +133,10 @@ window.FOMO_DASHBOARD = {
     {
       "date": "2026-07-24",
       "refs": 4413
+    },
+    {
+      "date": "2026-07-25",
+      "refs": 4536
     }
   ]
 };
