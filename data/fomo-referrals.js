@@ -1,5 +1,5 @@
 window.FOMO_DASHBOARD = {
-  "updatedAt": "2026-07-26T04:18:21.990Z",
+  "updatedAt": "2026-07-26T10:15:29.713Z",
   "instagram": {
     "handle": "@tryfomonews",
     "url": "https://www.instagram.com/tryfomonews/",
@@ -14,13 +14,13 @@ window.FOMO_DASHBOARD = {
         "title": "$70 into SUSHICAT",
         "format": "Case study",
         "views": 0,
-        "likes": 98,
+        "likes": 100,
         "comments": 8,
         "shares": 0,
         "saves": 0,
         "referrals": 0,
         "notes": "Best public engagement found. Loss/win story with tiny entry and huge upside.",
-        "syncedAt": "2026-07-26T04:18:21.217Z"
+        "syncedAt": "2026-07-26T10:15:28.434Z"
       },
       {
         "id": "Da7YB1tPwab",
@@ -36,7 +36,7 @@ window.FOMO_DASHBOARD = {
         "saves": 0,
         "referrals": 0,
         "notes": "Multi-wallet proof angle. Keep repeating clean profit screenshots and simple framing.",
-        "syncedAt": "2026-07-26T04:18:21.362Z"
+        "syncedAt": "2026-07-26T10:15:28.610Z"
       },
       {
         "id": "Da7syfivpxW",
@@ -52,7 +52,7 @@ window.FOMO_DASHBOARD = {
         "saves": 0,
         "referrals": 0,
         "notes": "Trend framing around Ansem/Solana. Good for comments and discourse.",
-        "syncedAt": "2026-07-26T04:18:21.543Z"
+        "syncedAt": "2026-07-26T10:15:29.238Z"
       },
       {
         "id": "Da6zSGgDwcf",
@@ -68,7 +68,7 @@ window.FOMO_DASHBOARD = {
         "saves": 0,
         "referrals": 0,
         "notes": "Simple before/after trade result. Needs stronger comments CTA.",
-        "syncedAt": "2026-07-26T04:18:21.687Z"
+        "syncedAt": "2026-07-26T10:15:29.429Z"
       },
       {
         "id": "Da5m7znD3Pd",
@@ -84,7 +84,7 @@ window.FOMO_DASHBOARD = {
         "saves": 0,
         "referrals": 0,
         "notes": "Product news angle. Lower engagement than trader PnL stories.",
-        "syncedAt": "2026-07-26T04:18:21.990Z"
+        "syncedAt": "2026-07-26T10:15:29.713Z"
       }
     ],
     "profileFollowers": 916
