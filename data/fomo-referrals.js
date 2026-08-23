@@ -1,5 +1,5 @@
 window.FOMO_DASHBOARD = {
-  "updatedAt": "2026-08-23T16:15:12.201Z",
+  "updatedAt": "2026-08-23T22:15:18.843Z",
   "instagram": {
     "handle": "@tryfomonews",
     "url": "https://www.instagram.com/tryfomonews/",
@@ -20,7 +20,7 @@ window.FOMO_DASHBOARD = {
         "saves": 0,
         "referrals": 0,
         "notes": "Best public engagement found. Loss/win story with tiny entry and huge upside.",
-        "syncedAt": "2026-08-23T16:15:11.440Z"
+        "syncedAt": "2026-08-23T22:15:18.230Z"
       },
       {
         "id": "Da7YB1tPwab",
@@ -36,7 +36,7 @@ window.FOMO_DASHBOARD = {
         "saves": 0,
         "referrals": 0,
         "notes": "Multi-wallet proof angle. Keep repeating clean profit screenshots and simple framing.",
-        "syncedAt": "2026-08-23T16:15:11.677Z"
+        "syncedAt": "2026-08-23T22:15:18.380Z"
       },
       {
         "id": "Da7syfivpxW",
@@ -52,7 +52,7 @@ window.FOMO_DASHBOARD = {
         "saves": 0,
         "referrals": 0,
         "notes": "Trend framing around Ansem/Solana. Good for comments and discourse.",
-        "syncedAt": "2026-08-23T16:15:11.861Z"
+        "syncedAt": "2026-08-23T22:15:18.501Z"
       },
       {
         "id": "Da6zSGgDwcf",
@@ -68,7 +68,7 @@ window.FOMO_DASHBOARD = {
         "saves": 0,
         "referrals": 0,
         "notes": "Simple before/after trade result. Needs stronger comments CTA.",
-        "syncedAt": "2026-08-23T16:15:12.026Z"
+        "syncedAt": "2026-08-23T22:15:18.725Z"
       },
       {
         "id": "Da5m7znD3Pd",
@@ -84,7 +84,7 @@ window.FOMO_DASHBOARD = {
         "saves": 0,
         "referrals": 0,
         "notes": "Product news angle. Lower engagement than trader PnL stories.",
-        "syncedAt": "2026-08-23T16:15:12.201Z"
+        "syncedAt": "2026-08-23T22:15:18.843Z"
       }
     ],
     "profileFollowers": 982
